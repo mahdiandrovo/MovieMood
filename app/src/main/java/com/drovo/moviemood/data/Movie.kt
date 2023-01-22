@@ -1,6 +1,6 @@
 package com.drovo.moviemood.data
 
-data class Search(
+data class Movie(
     val Poster: String,
     val Title: String,
     val Type: String,
