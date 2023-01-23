@@ -19,8 +19,9 @@
         android:name="com.drovo.moviemood.ui.details.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
-        <action
-            android:id="@+id/action_detailsFragment_to_movieFragment"
-            app:destination="@id/movieFragment" />
+
+        <argument
+            android:name="imdb_id"
+            app:argType="string" />
     </fragment>
 </navigation>

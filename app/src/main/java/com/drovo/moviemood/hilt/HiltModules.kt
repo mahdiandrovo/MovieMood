@@ -1,6 +1,7 @@
 package com.drovo.moviemood.hilt
 
 import com.drovo.moviemood.remote.MovieInterface
+import com.drovo.moviemood.ui.details.MovieDetailsRepository
 import com.drovo.moviemood.utils.Constants
 import dagger.Module
 import dagger.Provides
@@ -17,6 +18,10 @@ object HiltModules {
         return Retrofit.Builder().baseUrl(Constants.BASE_URL).addConverterFactory(
             GsonConverterFactory.create()
         ).build().create(MovieInterface::class.java)
+    }
 
+    @Provides
+    fun provideRepository(movieInterface: MovieInterface): MovieDetailsRepository{
+        return MovieDetailsRepository(movieInterface)
     }
 }
