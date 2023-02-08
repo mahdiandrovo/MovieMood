@@ -48,7 +48,10 @@ class MovieFragment : Fragment() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-                return false
+                newText?.let {
+                    viewModel.setQuery(it)
+                }
+                return true
             }
         })
 

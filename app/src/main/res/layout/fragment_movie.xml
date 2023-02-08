@@ -18,13 +18,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#AE94E7"
-            app:title="Movie Details"
             app:titleTextColor="@color/white">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/movie_search"
                 style="@style/Widget.AppCompat.SearchView"
-                android:layout_width="wrap_content"
+                app:queryHint="Search..."
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end" />
 
