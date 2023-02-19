@@ -3,7 +3,7 @@
 This is a very simple demo project. I have tried to merge most important elements which are related to Professional Android Application Development.
 
 ##### Application Overview:
-A user can search any movie.User can get detailed information about movies.
+A user can search any movie. User can get detailed information about movies.
 
 ##### Application Frontend:
 This is a demo app. That’s why I didn’t put that much importance on it. I know good looking is also very important. Day by day it will improve.
